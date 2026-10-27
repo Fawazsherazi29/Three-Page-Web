@@ -1,21 +1,25 @@
 :root {
   color-scheme: light;
-  --bg: #fbfaf7;
+  --bg: #f5fbfb;
   --surface: #ffffff;
-  --surface-alt: #f3f1ec;
-  --text: #1b1d24;
-  --muted: #5d6270;
-  --border: #e4e1d9;
-  --accent: #4f46e5;
-  --accent-strong: #4338ca;
-  --accent-soft: #eceafd;
+  --surface-alt: #e9f5f6;
+  --text: #0d2227;
+  --muted: #4a6469;
+  --border: #d3e7e9;
+  --accent: #0b7a95;
+  --accent-strong: #075e75;
+  --accent-soft: #dcf4f7;
   --on-accent: #ffffff;
+  --brand-from: #0ea5e9;
+  --brand-to: #14b8a6;
+  --brand-text-from: #0284c7;
+  --brand-text-to: #0d9488;
   --danger: #c62f3b;
   --danger-soft: #fdecee;
-  --success: #16794a;
-  --success-soft: #e6f6ee;
-  --shadow-sm: 0 1px 2px rgba(20, 22, 40, 0.06), 0 2px 8px rgba(20, 22, 40, 0.04);
-  --shadow-md: 0 12px 32px rgba(20, 22, 40, 0.1);
+  --success: #13803f;
+  --success-soft: #e3f6ea;
+  --shadow-sm: 0 1px 2px rgba(8, 50, 60, 0.07), 0 2px 8px rgba(8, 50, 60, 0.05);
+  --shadow-md: 0 12px 32px rgba(8, 50, 60, 0.12);
   --radius: 16px;
   --radius-sm: 10px;
   --header-height: 68px;
@@ -24,20 +28,24 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #0e1017;
-  --surface: #171a24;
-  --surface-alt: #1d2130;
-  --text: #eef0f6;
-  --muted: #a2a8ba;
-  --border: #2a2f40;
-  --accent: #8b86ff;
-  --accent-strong: #a8a4ff;
-  --accent-soft: #25254a;
-  --on-accent: #0e1017;
+  --bg: #081417;
+  --surface: #0f1f24;
+  --surface-alt: #132a30;
+  --text: #e6f4f5;
+  --muted: #98b3b8;
+  --border: #21383e;
+  --accent: #38d3cc;
+  --accent-strong: #7deae4;
+  --accent-soft: #123a40;
+  --on-accent: #03181b;
+  --brand-from: #38bdf8;
+  --brand-to: #2dd4bf;
+  --brand-text-from: #5ccbfa;
+  --brand-text-to: #4fe3cc;
   --danger: #ff7b86;
   --danger-soft: #3a1b22;
   --success: #5fd49a;
-  --success-soft: #153326;
+  --success-soft: #123325;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 14px 34px rgba(0, 0, 0, 0.45);
 }
@@ -158,7 +166,7 @@ textarea {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), #a855f7);
+  background: linear-gradient(135deg, var(--brand-from), var(--brand-to));
   color: #fff;
   font-size: 1rem;
   font-weight: 800;
@@ -339,7 +347,7 @@ textarea {
   padding: clamp(3rem, 8vw, 6.5rem) 0;
   background:
     radial-gradient(700px 360px at 85% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
-    radial-gradient(520px 320px at 0% 100%, color-mix(in srgb, #a855f7 12%, transparent), transparent 70%);
+    radial-gradient(520px 320px at 0% 100%, color-mix(in srgb, var(--brand-to) 14%, transparent), transparent 70%);
 }
 
 .hero-grid {
@@ -385,7 +393,7 @@ h3 {
 }
 
 .gradient-text {
-  background: linear-gradient(120deg, var(--accent), #a855f7);
+  background: linear-gradient(120deg, var(--brand-text-from), var(--brand-text-to));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -494,7 +502,7 @@ h3 {
 .cta {
   padding: clamp(2rem, 5vw, 3.5rem);
   border-radius: 24px;
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  background: linear-gradient(135deg, #0b6f94, #0f9c8f);
   color: #fff;
   text-align: center;
 }
@@ -512,11 +520,11 @@ h3 {
 
 .cta .btn {
   background: #fff;
-  color: #3b2fb8;
+  color: #075e75;
 }
 
 .cta .btn:hover {
-  background: #f1f0ff;
+  background: #e6f7f8;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
@@ -1157,7 +1165,7 @@ img {
   top: 1rem;
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
-  background: rgba(15, 18, 38, 0.78);
+  background: rgba(6, 36, 44, 0.78);
   color: #fff;
   font-size: 0.78rem;
   font-weight: 700;
